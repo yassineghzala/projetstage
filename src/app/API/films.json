@@ -1,0 +1,107 @@
+{
+  "films": [
+    {
+      "id": 3,
+      "titre": "Gladiateur",
+      "affiche": "assets/gladiateur.jpg",
+      "anneeSortie": 2000,
+      "genre": "Historique",
+      "oscar": true,
+      "realisateur": "Ridley Scott",
+      "pays": "USA",
+      "acteurs": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen"
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Al massir",
+      "affiche": "assets/massir.jpg",
+      "anneeSortie": 1997,
+      "genre": "Drame",
+      "oscar": false,
+      "realisateur": "Youssef Chahine",
+      "pays": "Égypte",
+      "acteurs": [
+        "Nour El-Sherif",
+        "Laila Elwi",
+        "Lebleba"
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Troie",
+      "affiche": "assets/troie.jpg",
+      "anneeSortie": 2004,
+      "genre": "Historique",
+      "oscar": false,
+      "realisateur": "Wolfgang Petersen",
+      "pays": "USA",
+      "acteurs": [
+        "Brad Pitt",
+        "Eric Bana",
+        "Orlando Bloom"
+      ]
+    },
+    {
+      "id": 11,
+      "titre": "Beautiful Mind",
+      "affiche": "assets/mind.jpg",
+      "anneeSortie": 2001,
+      "genre": "Drame",
+      "oscar": true,
+      "realisateur": "Ron Howard",
+      "pays": "USA",
+      "acteurs": [
+        "Russell Crowe",
+        "Ed Harris",
+        "Jennifer Connelly"
+      ]
+    },
+    {
+      "id": 18,
+      "titre": "Titanic",
+      "affiche": "assets/titanic.jpg",
+      "anneeSortie": 1997,
+      "genre": "Romance",
+      "oscar": true,
+      "realisateur": "James",
+      "pays": "USA",
+      "acteurs": [
+        "zer"
+      ]
+    },
+    {
+      "id": 19,
+      "titre": "Al Mummia",
+      "affiche": "assets/mummia.jpg",
+      "anneeSortie": 1997,
+      "genre": "Drame",
+      "oscar": false,
+      "realisateur": "Shadi Abdel Salam",
+      "pays": "Égypte",
+      "acteurs": [
+        "Ahmad Hegazi",
+        "Nadria Adly",
+        "Ahmad Ali"
+      ]
+    },
+    {
+      "id": 23,
+      "titre": "L'Immeuble Yacoubian",
+      "affiche": "assets/yacoubian.jpg",
+      "anneeSortie": 2006,
+      "genre": "Drame",
+      "oscar": false,
+      "realisateur": "Marwan Hamed",
+      "pays": "Égypte",
+      "acteurs": [
+        "Adel Imam",
+        "Nour El-Sherif",
+        "Hind Sabry"
+      ]
+    }
+  ]
+}
