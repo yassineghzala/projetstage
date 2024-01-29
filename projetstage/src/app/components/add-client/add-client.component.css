@@ -1,0 +1,32 @@
+.addUserForm-main-container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.addUserForm-box{
+    height:auto;
+    width:400px;
+    border-radius:5px;
+    padding:20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-container{
+    display:flex;
+    flex-direction: column;
+}
+.auth-button{
+    margin-top:25px;
+}
+.form-inputs{
+    height:30px;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.addUser-buttons{
+    display:flex;
+    justify-content: space-between;
+    margin-top:25px;
+}

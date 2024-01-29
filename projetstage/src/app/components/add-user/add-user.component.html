@@ -1,0 +1,35 @@
+<div class="addUserForm-main-container">
+    <div class="addUserForm-box">
+        <h3>Add User</h3>
+        <form [formGroup]="addUserForm" class="form-container">
+            <label for="" >Username</label> 
+            <input type="text" formControlName="username" class="form-inputs">
+            <div *ngIf="usernameRequired()" class="alert alert-danger">
+                The Username is Required
+            </div>
+            <label for="" >Email</label>
+            <input type="text" formControlName="email" class="form-inputs">
+            <div *ngIf="emailRequired()" class="alert alert-danger">
+                The email is Required
+            </div>
+            <label for="">token</label>
+            <input type="text" formControlName="token" class="form-inputs">
+            <div *ngIf="tokenRequired()" class="alert alert-danger">
+                The Token is Required
+            </div>
+            <label for="">status</label>
+            <select name="status" formControlName="status" class="form-input" style="height:35px;">
+                <option *ngFor="let s of allStatus" [value]="s" >{{s}}</option>
+            </select>
+            <label for="">Admin</label>
+            <select name="Admin" formControlName="isadmin" class="form-input" style="height:35px;">
+                <option [value]="true" >admin</option>
+                <option [value]="false">Not an admin</option>
+            </select>
+            <div class="addUser-buttons">
+                <button type="submit" class="btn btn-primary" (click)="navigateTo('userListing');addUser()">Enregister</button>
+                <button class="btn btn-primary" (click)="navigateTo('userListing')">Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>

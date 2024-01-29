@@ -1,0 +1,49 @@
+<dir class="users-listing-container">
+    <div style="display:flex;width:62%;margin-bottom:25px;" >
+    </div>
+    <div class="users-list">
+        <div style="display: flex;justify-content: space-between;">
+            <h2>Liste Utilisateur</h2>
+            <div >
+                <form action="" [formGroup]="searchUserForm" >
+                    <div style="display:flex;width:300px;">
+                        <div style="display:flex;flex-direction:column;margin-left:25px;">
+                            <label for="">Email</label>
+                            <select name="email" formControlName="email" class="form-input" style="height:30px;">
+                                <option *ngFor="let u of searchList" [value]="u.email" #email>{{u.email}}</option>
+                            </select>
+                        </div>
+                        <div style="display:flex;flex-direction:column;margin-left:25px;">
+                            <label for="">Statut</label>
+                            <select name="status" formControlName="status" class="form-input" style="height:30px;">
+                                <option *ngFor="let s of allStatus" [value]="s" #status>{{s}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="searchUser-buttons">
+                        <button class="btn btn-primary" type="submit" (click)="searchUser()">rechercher</button>
+                        <button style="margin-left:25px;" class="btn btn-primary" (click)="reinitialise()">reinitialiser</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div style="width:100%;margin-top:25px;">
+            <table style="width:100%;">
+                <tr >
+                    <th style="padding:25px;">Email</th>
+                    <th style="padding:25px;">Status</th>
+                    <th style="padding:25px;">Actions</th>
+                </tr>
+                <tr style="border-top:1px solid black;" *ngFor="let user of usersList">
+                    <td style="padding:25px;">{{user.email}}</td>
+                    <td style="padding:25px;width:400px;">{{user.status}}</td>
+                    <td >
+                        <button mat-raised-button (click)="openDialog()" class="btn btn-primary">Modifier</button>
+                        <button style="margin-left:25px;" class="btn btn-primary" (click)="deleteUserById(user.userID)">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button class="btn btn-primary" (click)="navigateTo('home/addUser')">Ajouter Utilisateur</button>
+    </div>
+</dir>

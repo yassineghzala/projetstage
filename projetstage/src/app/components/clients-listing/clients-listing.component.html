@@ -1,0 +1,22 @@
+<dir class="clients-listing-container">
+    <div style="display:flex;width:86.5%;margin-bottom:25px;">
+        <button class="btn btn-primary">rechercher</button>
+    </div>
+    <div class="clients-list">
+        <h2>Liste Utilisateur</h2>
+        <div class="clients-list-header">
+            <p>Code client</p>
+            <p>Nom/Raison sociale</p>
+            <p>Activite</p>
+            <p>Nature</p>
+            <p>Categorie SE</p>
+            <p>Categorie SE définitieve</p>
+            <p style="margin-right:10px;">Statut</p>
+            <p style="margin-left:10px;">Action</p>
+        </div>
+        <div class="users-list-content" *ngFor="let client of clientsList">
+            <app-single-client [client]="client"></app-single-client>
+        </div>
+        <button class="btn btn-primary" (click)="navigateTo('addClient')">Ajouter Utilisateur</button>
+    </div>
+</dir>

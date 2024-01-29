@@ -1,0 +1,30 @@
+.clients-listing-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+    margin-top:200px;
+}
+.clients-list{
+    padding:25px;
+    width:85vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.clients-list h2{
+    margin-bottom:50px;
+}
+.clients-list-header{
+    display:flex;
+    width:99%;
+    padding:25px;
+    padding-right:15px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.clients-list-header h3{
+    width:100px;
+    text-align: center;
+}
+.clients-list-content{
+    width:100%;
+}

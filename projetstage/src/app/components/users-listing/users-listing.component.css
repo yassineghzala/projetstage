@@ -1,0 +1,46 @@
+.users-listing-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+    margin-top:200px;
+}
+.users-list{
+    padding:25px;
+    width:60vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.users-list h2{
+    margin-bottom:50px;
+}
+.users-list-header{
+    display:flex;
+    width:99%;
+    padding:25px;
+    padding-right:35px;
+    justify-content: space-between;
+}
+.users-list-header p{
+    font-weight:bold;
+}
+.users-list-content{
+    width:100%;
+}
+.research-container{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+}
+.research_criteria{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+}
+.research_criteria input{
+    margin-bottom:10px;
+}
+.searchUser-buttons{
+    display:flex;
+    margin-left:72px;
+    margin-top:25px;
+}

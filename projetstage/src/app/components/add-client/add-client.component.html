@@ -1,0 +1,39 @@
+<div class="addUserForm-main-container">
+    <div class="addUserForm-box">
+        <h3>Add User</h3>
+        <form [formGroup]="addClientForm" class="form-container">
+            <label for="" >Code</label> 
+            <input type="number" formControlName="code" class="form-inputs">
+            <label for="" >Social Reason</label>
+            <input type="text" formControlName="social_reason" class="form-inputs">
+            <label for="">Activity</label>
+            <input type="text" formControlName="activity" class="form-inputs">
+            <label for="">Category</label>
+            <input type="text" formControlName="category" class="form-inputs">
+            <label for="">Token</label>
+            <input type="text" formControlName="token" class="form-inputs">
+            <label for="">Status</label>
+            <input type="text" formControlName="status" class="form-inputs">
+            <label for="">Nature</label>
+            <input type="text" formControlName="nature" class="form-inputs">
+            <label for="">Final Category</label>
+            <input type="text" formControlName="final_category" class="form-inputs">
+            <label for="">Eligible RSE</label>
+            <input type="text" formControlName="eligible_rse" class="form-inputs">
+            <label for="">Adress</label>
+            <input type="text" formControlName="adress" class="form-inputs">
+            <label for="">Client Engagement</label>
+            <input type="text" formControlName="client_engagement" class="form-inputs">
+            <label for="">Domestic Activity Id</label>
+            <input type="text" formControlName="domestic_activity_id" class="form-inputs">
+            <label for="">Telephone</label>
+            <input type="tel" formControlName="telephone" class="form-inputs">
+            <label for="">Legal Form</label>
+            <input type="text" formControlName="legal_form" class="form-inputs">
+            <div class="addClient-buttons">
+                <button type="submit" class="btn btn-primary" (click)="addClient();navigateTo('clientListing')">Enregistrer</button>
+                <button class="btn btn-primary" (click)="navigateTo('clientListing')">Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>

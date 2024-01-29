@@ -1,0 +1,11 @@
+.single-client{
+    border-top:2px solid grey;
+    padding:25px;
+    display:flex;
+    justify-content: space-between;
+}
+.single-client-content{
+    display:flex;
+    justify-content:space-between;
+    width:600px;
+}
